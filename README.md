@@ -27,22 +27,6 @@ User Query → LangGraph Agent → MCP Client → Tool Servers → Response
 - MCP (Model Context Protocol)
 - FastMCP
 
----
-
-## Project Structure
-
-.
-├── client.py  
-├── mathserver.py  
-├── weather.py  
-├── main.py  
-├── requirements.txt  
-├── pyproject.toml  
-├── .env.example  
-└── README.md  
-
----
-
 ## Setup
 
 ### 1. Install dependencies
