@@ -16,7 +16,7 @@ The system connects multiple tool servers, such as math and weather, to a single
 
 ## Architecture
 
-```text
+
 User Query → LangGraph Agent → MCP Client → Tool Servers → Response
 
 ## Tech Stack
