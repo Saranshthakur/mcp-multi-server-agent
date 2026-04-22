@@ -4,15 +4,20 @@
 
 This project demonstrates how to build a modular AI agent using Model Context Protocol (MCP), LangGraph, and LangChain MCP Adapters.
 
-The system connects multiple tool servers (math + weather) to a single agent. The agent dynamically selects and invokes tools instead of hardcoding them.
+The system connects multiple tool servers, such as math and weather, to a single agent. Instead of hardcoding tools directly into the agent, the system uses MCP to expose tools and enable dynamic tool invocation.
 
----
+## Key Features
+
+- Built a multi-server MCP demo using FastMCP, LangGraph, and LangChain MCP Adapters.
+- Exposed math tools through a local `stdio` MCP server and weather tools through an HTTP MCP server.
+- Connected multiple MCP servers through `MultiServerMCPClient` and enabled agent-driven tool calling.
+- Used a ReAct-style LangGraph agent to decide which tool to invoke based on user input.
+- Separated tool servers from agent orchestration to keep the system modular and easier to extend.
 
 ## Architecture
 
+```text
 User Query → LangGraph Agent → MCP Client → Tool Servers → Response
-
----
 
 ## Tech Stack
 
